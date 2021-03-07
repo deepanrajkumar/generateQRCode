@@ -5,7 +5,8 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start:metro": "react-native start",
+    "start": "npm run android && npm run start:web",
     "test": "jest",
     "lint": "eslint .",
     "watch": "webpack --watch",
