@@ -18,15 +18,16 @@
     "serve:dev:local": "node config/dev-server.js"
   },
   "dependencies": {
+    "lodash": "^4.17.20",
     "react": "16.13.1",
     "react-dom": "^16.13.1",
     "react-native": "0.63.4",
-    "styled-components": "^5.1.1",
-    "lodash": "^4.17.20"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.13",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
     "babel-jest": "^25.1.0",
