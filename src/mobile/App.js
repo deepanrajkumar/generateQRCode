@@ -1,12 +1,12 @@
+import "react-native-gesture-handler";
 import React from "react";
-import { View, Text } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import AppMainNavigator from "./Navigation/AppMainNavigator";
 
-const App = () => {
-  return (
-    <View>
-      <Text>Launch Mobile App</Text>
-    </View>
-  );
-};
+const App = () => (
+  <NavigationContainer>
+    <AppMainNavigator />
+  </NavigationContainer>
+);
 
 export default App;
