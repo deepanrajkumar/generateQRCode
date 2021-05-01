@@ -27,9 +27,11 @@
     "react-dom": "^16.13.1",
     "react-native": "0.63.4",
     "react-native-gesture-handler": "^1.10.3",
+    "react-native-qrcode-svg": "^6.1.1",
     "react-native-reanimated": "^2.0.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^2.18.1",
+    "react-native-svg": "^12.1.1",
     "react-native-tab-view": "^2.16.0",
     "styled-components": "^5.1.1"
   },

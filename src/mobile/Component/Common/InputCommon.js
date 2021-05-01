@@ -1,5 +1,5 @@
 import React from "react";
-import { TextInput, View } from "react-native";
+import { Text, TextInput, View } from "react-native";
 
 const styles = {
   container: {
@@ -14,16 +14,19 @@ const styles = {
     backgroundColor: "#f2f2f2",
     paddingHorizontal: 10,
   },
+  label: { fontWeight: "bold", marginBottom: 10, color: "maroon" },
 };
 
-const InputCommon = ({ name, value, getValue }) => {
+const InputCommon = ({ name, value, getValue, keyboardType, label }) => {
   return (
     <View style={styles.container}>
+      {label ? <Text style={styles.label}>{label || name}</Text> : null}
       <TextInput
         style={styles.input}
         onChangeText={(text) => getValue(text.replace(/\s/g, ""))}
         value={value}
-        placeholder={name}
+        placeholder={label ? "" : name}
+        keyboardType={keyboardType || "default"}
       />
     </View>
   );
